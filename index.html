@@ -1,0 +1,79 @@
+<html>
+<head>
+	<title>TEST!</title>
+	<link rel="stylesheet" href="vendor/animate.css">
+	<script src="vendor/wow.js"></script>
+	<script type="text/javascript">
+		window.addEventListener("load", function() {new WOW().init();});
+	</script>
+	<style type="text/css">
+		#fondo {
+			width: 1024px;
+			margin: auto;
+			background-image: url("./textos.svg"),
+			                  url("./fondo.svg");
+			background-attachment: local;
+			background-size: cover;
+			height: 3639px;
+		}
+		.elem {
+			position: relative;
+			background-attachment: local;
+			background-size: cover;
+			visibility: hidden;
+		}
+		#slide1 {
+			background-image: url("grafico1.svg");
+			left: 185px;
+			top: -58px;
+			width: 768px;
+			height: 723px;
+		}
+		#slide2 {
+			background-image: url("grafico2.svg");
+			left: -373px;
+			top: -256px;
+			width: 849px;
+			height: 723px;
+		}
+		#slide3 {
+			background-image: url("grafico3.svg");
+			left: 468px;
+			top: -151px;
+			width: 510px;
+			height: 458px;
+		}
+		#slide4 {
+			background-image: url("grafico4.svg");
+			left: -96px;
+			top: -295px;
+			width: 506px;
+			height: 554px;
+		}
+		#slide5 {
+			background-image: url("grafico5.svg");
+			left: 589px;
+			top: -389px;
+			width: 549px;
+			height: 431px;
+		}
+		#slide6 {
+			background-image: url("grafico6.svg");
+			left: -200px;
+			top: -438px;
+			width: 649px;
+			height: 352px;
+		}
+	</style>
+</head>
+<body>
+	<div id="fondo">
+		<div id="slide1" class="elem wow fadeIn"></div>
+		<div id="slide2" class="elem wow bounceInLeft"></div>
+		<div id="slide3" class="elem wow bounceInRight"></div>
+		<div id="slide4" class="elem wow jackInTheBox"></div>
+		<div id="slide5" class="elem wow zoomInDown"></div>
+		<div id="slide6" class="elem wow zoomIn"></div>
+	</div>
+</body>
+</html>
