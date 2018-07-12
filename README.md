@@ -1,6 +1,10 @@
-# Procedimiento de adquisición - Infografía
+# scrollgrafias
+Infografías scrolleables
 
-## ids
+
+### Procedimiento de adquisición - Infografía
+
+#### ids (infografia.svg)
 
 Acá voy a documentar los ids de los elementos importantes en el svg que me pasaron por mail:
 
@@ -22,7 +26,7 @@ Acá voy a documentar los ids de los elementos importantes en el svg que me pasa
   * Apretón de manos: #XMLID\_24\_
   * Círculo que contiene el apretón: #XMLID\_118\_
 
-## Recursos:
+### Recursos:
 
 * [WOW](https://github.com/matthieua/WOW): librería en Javascript para triggerear animaciones al scrollear
 * [animate.css](https://github.com/daneden/animate.css): animaciones en css enlatadas
