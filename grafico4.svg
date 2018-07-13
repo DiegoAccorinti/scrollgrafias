@@ -121,6 +121,17 @@
 			c-11.2-9-22.9-13.6-33.1-12.1C219.9,128,217.6,128.7,215.5,129.8z"/>
 	</g>
 	<g id="XMLID_2421_">
+		<animateTransform attributeName="transform"
+		type="scale"
+		values="1;1.1;1"
+		repeatCount="indefinite"
+		dur="1.5s"/>
+		<animateTransform attributeName="transform"
+		type="translate"
+		values="0 0;-20 -20;0 0"
+		additive="sum"
+		repeatCount="indefinite"
+		dur="1.5s"/>
 		<g id="XMLID_2430_">
 			
 				<rect id="XMLID_2431_" x="310" y="260.8" transform="matrix(0.8189 0.5739 -0.5739 0.8189 209.4729 -138.2021)" class="st4" width="27.5" height="4"/>
