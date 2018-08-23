@@ -3,9 +3,27 @@
 	<title>TEST!</title>
 	<link rel="stylesheet" href="vendor/animate.css">
 	<script src="vendor/wow.js"></script>
+	<script src="vendor/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript">
-		window.addEventListener("load", function() {new WOW().init();});
-	</script>
+		window.addEventListener("load", function() {
+			wow1 = new WOW().init();
+			wow2 = new WOW({boxClass:     'wow2'}).init();
+			});
+		
+
+$(window).scroll(function() {
+   if( ($(window).scrollTop() >  2680) || ($(window).scrollTop() == 0)) {
+       //$(window).unbind('scroll');
+       $('.wow').not($('slide1')).removeClass('animated');
+       $('.wow').not($('slide1')).removeAttr('style');
+       
+       wow1 = new WOW().init();
+   }
+});
+
+
+    
+</script>
 	<style type="text/css">
 		#fondo {
 			width: 1024px;
@@ -23,11 +41,13 @@
 			visibility: hidden;
 		}
 		#slide1 {
-			left: 185px;
+			left: 178px;
 			top: -58px;
 			width: 1021px;
 			height: 723px;
+			visibility: visible;
 		}
+		
 		#slide2 {
 			left: -373px;
 			top: -256px;
@@ -58,16 +78,77 @@
 			width: 693px;
 			height: 352px;
 		}
+		
+		#titulo1 {
+					left: 238px;
+					top:  -2778px;
+					width: 550px;
+				 }
+		
+		#titulo2 {
+					left: 172px;
+					top:  -2278px;
+					width: 700px;   }
+		
+		#titulo3 {
+					left: 348px;
+					top:  -1789px;
+					width: 330px;   }
+				
+		#titulo4 {
+					left: -42px;
+					top: -1406px;
+					width: 470px;  }
+					
+		#titulo5 {
+					left: 220px;
+					top: -1148px;
+					width: 470px;  }
+					
+		#titulo6 {
+					left: -205px;
+					top: -764px;
+					width: 500px;  }
+		
+		#titulo7 {
+					left: 335px;
+					top: -268px;
+					width: 550px;  }
+		#titulo8 {
+					left: 367px;
+					top: -241px;
+					width: 550px;  }
+		#titulo9 {
+					left: 450px;
+					top: -213px;
+					width: 500px;  }
+
 	</style>
 </head>
 <body>
 	<div id="fondo">
-		<object type="image/svg+xml" data="grafico1.svg" id="slide1" class="elem wow fadeIn"></object>
-		<object type="image/svg+xml" data="grafico2.svg" id="slide2" class="elem wow bounceInLeft"></object>
-		<object type="image/svg+xml" data="grafico3.svg" id="slide3" class="elem wow bounceInRight"></object>
-		<object type="image/svg+xml" data="grafico4.svg" id="slide4" class="elem wow jackInTheBox"></object>
-		<object type="image/svg+xml" data="grafico5.svg" id="slide5" class="elem wow zoomInDown"></object>
-		<object type="image/svg+xml" data="grafico6.svg" id="slide6" class="elem wow zoomIn"></object>
+		<object type="image/svg+xml" data="grafico1.svg" id="slide1" class="elem wow2 pulse" data-wow-iteration="infinite"></object>
+		<object type="image/svg+xml" data="grafico2.svg" id="slide2" class="elem wow fadeIn" data-wow-delay="1s" data-wow-duration="2s"></object>
+		<object type="image/svg+xml" data="grafico3.svg" id="slide3" class="elem wow bounceInRight" data-wow-delay="0.5s" data-wow-duration="1.5s"></object>
+		<object type="image/svg+xml" data="grafico4.svg" id="slide4" class="elem wow fadeIn" data-wow-delay="0.5s" data-wow-duration="3s"></object>
+		<object type="image/svg+xml" data="grafico5.svg" id="slide5" class="elem wow zoomInDown" data-wow-delay="0.5s" data-wow-duration="1.5s"></object>
+		<object type="image/svg+xml" data="grafico6.svg" id="slide6" class="elem wow zoomIn" data-wow-delay="0s" data-wow-duration="1.5s"></object>
+		<!-- titulos -->
+		<object type="image/svg+xml" data="titulos/titulo_01.svg" id="titulo1" class="elem wow bounceInRight" data-wow-delay="0s" data-wow-duration="2s"></object>
+		<object type="image/svg+xml" data="titulos/titulo_02.svg" id="titulo2" class="elem wow bounceInLeft" data-wow-delay="0.5s" data-wow-duration="2s"></object>
+		<object type="image/svg+xml" data="titulos/titulo_03.svg" id="titulo3" class="elem wow bounceInRight" data-wow-delay="0.5s" data-wow-duration="2s"></object>
+		<object type="image/svg+xml" data="titulos/titulo_04.svg" id="titulo4" class="elem wow bounceInLeft" data-wow-delay="0.5s" data-wow-duration="2s"></object>
+		<object type="image/svg+xml" data="titulos/titulo_05.svg" id="titulo5" class="elem wow bounceInRight" data-wow-delay="0.5s" data-wow-duration="2s"></object>
+		<object type="image/svg+xml" data="titulos/titulo_06.svg" id="titulo6" class="elem wow bounceInLeft" data-wow-delay="0.5s" data-wow-duration="2s"></object>
+		
+		
+			<object type="image/svg+xml" data="titulos/titulo_07.svg" id="titulo7" class="elem wow2 bounceInRight" data-wow-delay="0.5s" data-wow-duration="2s"></object>
+			<object type="image/svg+xml" data="titulos/titulo_08.svg" id="titulo8" class="elem wow2 bounceInRight" data-wow-delay="1s" data-wow-duration="2s"></object>
+		<div class="wow2 flash" data-wow-iteration="infinite" data-wow-duration="4s" data-wow-delay="2s">
+			<object type="image/svg+xml" data="titulos/titulo_09.svg" id="titulo9" class="elem wow2 bounceInRight" data-wow-delay="1.5s" data-wow-duration="2s"></object>
+		</div>
+		
 	</div>
 </body>
 </html>
+
